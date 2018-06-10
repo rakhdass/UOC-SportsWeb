@@ -1,3 +1,4 @@
+package Servelet;
 
 
 import java.io.IOException;
@@ -30,7 +31,7 @@ public class GetAlienController extends HttpServlet {
 		
 
 		
-		System.out.println("servlet qwe" );
+		System.out.println("servlet " );
 		 
 	
 	}
