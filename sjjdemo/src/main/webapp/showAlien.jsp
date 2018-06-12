@@ -8,10 +8,15 @@
 <title>Insert title here</title>
 </head>
 <body bgcolor="cyan">
-  <%
-  Alien a= (Alien)request.getAttribute("Alien");
-  out.println(a);
+	<%
+	if(session.getAttribute("username")==null){
+		response.sendRedirect("Login.jsp");
+	}
+	%>
+  	<%
+  	Alien a= (Alien)request.getAttribute("Alien");
+  	out.println(a);
   
-  %>
+  	%>
 </body>
 </html>

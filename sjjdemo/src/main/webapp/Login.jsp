@@ -7,6 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<form action="LoginController">
+		Username:<input type="text" name="uname"><br>
+		Password:<input type="password" name="pw"><br>
+		<input type="submit" value="login">
+
+	</form>
 
 </body>
 </html>

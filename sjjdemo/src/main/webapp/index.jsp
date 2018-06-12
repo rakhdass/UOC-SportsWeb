@@ -1,5 +1,10 @@
 <html>
 <body>
+	<%
+	if(session.getAttribute("username")==null){
+		response.sendRedirect("Login.jsp");
+	}
+	%>
 <h2>Hello World!</h2>
 	<form action="getAlien1">
 		<input type="text" name="id">
