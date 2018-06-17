@@ -26,6 +26,7 @@ public class GetAlienController extends HttpServlet {
 		int id = Integer.parseInt(request.getParameter("id"));
 		AlienDao a1= new AlienDao();
 		Alien a2 =a1.getAlien(id);
+		
 		request.setAttribute("Alien", a2);
 		javax.servlet.RequestDispatcher rs = request.getRequestDispatcher("showAlien.jsp");
 		rs.forward(request,response);
